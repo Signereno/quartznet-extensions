@@ -8,7 +8,7 @@ Below are some examples on how to create a new scheduler. Note that `InstanceNam
 
 See [Quartz Configuration Reference](http://www.quartz-scheduler.org/documentation/quartz-2.x/configuration/) for information about the available configuration properties.
 
-Database tables are not created automatically. The required tables must first be created by running the provided script.
+Database tables are **not** created automatically. The required tables must first be created by running the provided script.
 
 ### SqlServer
 
