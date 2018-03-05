@@ -29,3 +29,25 @@ var config = new QuartzSqlServerConfiguration("InstanceName", "ConnectionString"
 IScheduler scheduler = await SqlServerSchedulerFactory.GetDefaultScheduler(config);
 await scheduler.Start();
 ```
+
+### PostgreSQL
+
+With default configuration:
+
+```csharp
+IScheduler scheduler = await PostgreSqlSchedulerFactory.GetDefaultScheduler("InstanceName", "ConnectionString");
+await scheduler.Start();
+```
+
+With custom configuration:
+```csharp
+var config = new QuartzPostgreSqlConfiguration("InstanceName", "ConnectionString") {
+    ThreadPool = new QuartzThreadPoolConfiguration()
+    {
+      ThreadCount = 10
+    }
+};
+
+IScheduler scheduler = await PostgreSqlSchedulerFactory.GetDefaultScheduler(config);
+await scheduler.Start();
+```
