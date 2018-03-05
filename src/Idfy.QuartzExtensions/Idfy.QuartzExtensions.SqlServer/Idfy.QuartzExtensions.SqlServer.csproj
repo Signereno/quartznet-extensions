@@ -4,13 +4,15 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DocumentationFile>bin\Debug\netstandard2.0\Idfy.QuartzExtensions.SqlServer.xml</DocumentationFile>
+    <NoWarn>1701;1702;1705;1591
+</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DocumentationFile>bin\Release\netstandard2.0\Idfy.QuartzExtensions.SqlServer.xml</DocumentationFile>
+    <NoWarn>1701;1702;1705;1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Quartz" Version="3.0.0" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.4.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Idfy.QuartzExtensions.Core\Idfy.QuartzExtensions.Core.csproj" />

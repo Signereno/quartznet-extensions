@@ -1,23 +1,21 @@
 ﻿using System;
-using System.Collections.Specialized;
 using System.Threading;
 using System.Threading.Tasks;
 using Idfy.QuartzExtensions.Core;
 using Quartz;
-using Quartz.Impl;
 
-namespace Idfy.QuartzExtensions.SqlServer
+namespace Idfy.QuartzExtensions.PostgreSql
 {
-    public static class SqlServerSchedulerFactory
+    public class PostgreSqlSchedulerFactory
     {
         public static async Task<IScheduler> GetDefaultScheduler(string instanceName, string connectionString,
             CancellationToken cancellationToken = default(CancellationToken))
         {
-            var configuration = new QuartzSqlServerConfiguration(instanceName, connectionString);
+            var configuration = new QuartzPostgreSqlConfiguration(instanceName, connectionString);
             return await GetDefaultScheduler(configuration, cancellationToken);
         }
 
-        public static async Task<IScheduler> GetDefaultScheduler(QuartzSqlServerConfiguration configuration,
+        public static async Task<IScheduler> GetDefaultScheduler(QuartzPostgreSqlConfiguration configuration,
             CancellationToken cancellationToken = default(CancellationToken))
         {
             return await PersistentSchedulerFactory.GetDefaultScheduler(configuration, cancellationToken);
