@@ -10,6 +10,8 @@ See [Quartz Configuration Reference](http://www.quartz-scheduler.org/documentati
 
 ### SqlServer
 
+Database script: https://github.com/quartznet/quartznet/blob/master/database/tables/tables_sqlServer.sql
+
 With default configuration:
 
 ```csharp
@@ -31,6 +33,8 @@ await scheduler.Start();
 ```
 
 ### PostgreSQL
+
+Database script: https://github.com/quartznet/quartznet/blob/master/database/tables/tables_postgres.sql
 
 With default configuration:
 
