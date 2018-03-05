@@ -133,6 +133,9 @@ namespace Idfy.QuartzExtensions.Core
         /// <summary>
         /// The “table prefix” property is a string equal to the prefix given to Quartz’s tables that were created in your database.
         /// You can have multiple sets of Quartz’s tables within the same database if they use different table prefixes.
+        /// <para/>
+        /// <para/>
+        /// The default value is "QRTZ_".
         /// </summary>
         public string TablePrefix { get; set; } = "QRTZ_";
 
