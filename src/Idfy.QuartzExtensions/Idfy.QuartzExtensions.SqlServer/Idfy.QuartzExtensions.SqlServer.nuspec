@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Idfy.QuartzExtensions.SqlServer</id>
+    <version>$version</version>
+    <authors>Idfy Norge AS</authors>
+    <description>The SqlServer library for Idfy.QuartzExtensions</description>
+  </metadata>
+  <files>
+	<file src="bin\Release\netstandard2.0\Idfy.QuartzExtensions.SqlServer.dll" target="lib\netstandard2.0" />
+  </files>
+</package>

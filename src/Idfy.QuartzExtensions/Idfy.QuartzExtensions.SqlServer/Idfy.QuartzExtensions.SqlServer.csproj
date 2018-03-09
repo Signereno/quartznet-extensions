@@ -12,9 +12,6 @@
     <NoWarn>1701;1702;1705;1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Quartz" Version="3.0.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Idfy.QuartzExtensions.Core\Idfy.QuartzExtensions.Core.csproj" />
+    <PackageReference Include="Idfy.QuartzExtensions.Core" Version="1.*" />
   </ItemGroup>
 </Project>
