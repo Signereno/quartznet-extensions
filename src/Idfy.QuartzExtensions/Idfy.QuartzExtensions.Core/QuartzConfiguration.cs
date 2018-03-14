@@ -82,14 +82,6 @@ namespace Idfy.QuartzExtensions.Core
         /// The default value is 1.
         /// </summary>
         public int ThreadCount { get; set; } = 1;
-
-        /// <summary>
-        /// Can be any of the following string values: "Lowest", "BelowNormal", "Normal", "AboveNormal", "Highest".
-        /// <para/>
-        /// <para/>
-        /// The default value is "Normal".
-        /// </summary>
-        public string ThreadPriority { get; set; } = "Normal";
     }
 
     public class QuartzJobStoreConfiguration

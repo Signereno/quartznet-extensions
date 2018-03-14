@@ -10,7 +10,6 @@ namespace Idfy.QuartzExtensions.Core
             {"quartz.scheduler.instanceId", configuration.Scheduler.InstanceId},
             {"quartz.threadPool.type", configuration.ThreadPool.Type},
             {"quartz.threadPool.threadCount", configuration.ThreadPool.ThreadCount.ToString()},
-            {"quartz.threadPool.threadPriority", configuration.ThreadPool.ThreadPriority},
             {"quartz.jobStore.useProperties", configuration.JobStore.UseProperties.ToString()},
             {"quartz.jobStore.clustered", configuration.JobStore.Clustered.ToString()},
             {"quartz.jobStore.misfireThreshold", configuration.JobStore.MisfireThreshhold.ToString()},
